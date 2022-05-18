@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  
+}
+
+#bg {
+  width: 42.8rem;
+  height: 100vh;
+
+  background-image: url("./images/Foto-background.png");
+  background-repeat: no-repeat;
+}
+
+#bg::before {
+  content: '';
+  position: absolute;
+  width: 42.8rem;
+  height: 92.6rem;
+  background: linear-gradient(169.45deg, rgba(98, 43, 169, 0.7) 24.76%, rgba(126, 58, 213, 0.413) 93.43%);
+}
+
+.face {
+  width: 35.8rem;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  margin-top: 38rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transform-style: preserve-3d;
+}
+
+#front {
+  font-size: 5rem;
+
+  background: linear-gradient(124.82deg, #8E54D9 34.14%, #5C1BAD 75.77%);
+  border-radius: 15px;
+
+  /* transform: rotateY(180deg); */
+}
+
+#mastercard {
+  margin-left: 28rem;
+  
+}
+
+#chip {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 25rem;
+}
+
+#name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+
+  margin-top: 3rem;
+  margin-right: 8rem;
+  margin-bottom: 2rem;
+}
+
+#name h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  color: #E0E0E0;
+}
